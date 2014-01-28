@@ -4,7 +4,7 @@ body { color: #333; background-color: #444;}
 .hide {display:none;}
 
 .platform {margin: 20px auto; background-color: #fff;}
-.header {padding:40px; padding-bottom:30px; background-image: url("bg.png");}
+.header {padding:40px; padding-bottom:30px; background-image: url("../img/bg.png");}
 .name-text {font-size: 36px; margin-bottom:10px; margin-top: 30px; line-height: 36px;}
 .major-text {font-size: 18px; margin-bottom: 10px;}
 .margin-top-5 {margin-top:5px;}
@@ -26,25 +26,25 @@ a.dotted {border-bottom: 1px black dotted; display: block;}
 a.dotted:hover {text-decoration: none;}
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 900px) {
+@media (min-width: 900px) { 
   .platform {width:980px; }
   .section-title { width: 180px; }
   .section-body { width: 690px; }
-
+  
   .pdf {position: fixed; top:189px; margin-left: 340px;}
 
   .item-name { max-width:550px; font-size: 16px; font-weight: bold; color: #2e4dbf;}
   .item-desc { max-width:550px; font-size:14px; font-style: italic;}
   .item-period {border: 1px solid #ddd; font-size: 12px; padding:2px 5px 2px 5px;}
 }
-
+ 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (max-width: 767px) {  
 
 }
-
+ 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 480px) { 
   .name-text {margin-top: 15px;}
   .main {padding:20px; padding-bottom:25px;}
   .platform {margin: 10px auto;}
