@@ -6,10 +6,9 @@ ruby "1.9.3"
 gem 'rails', '4.0.0'
 
 
-group :production, :staging do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+
+  gem 'pg', group: :production
+  gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
