@@ -9,6 +9,7 @@ gem 'rails', '4.0.0'
 
   gem 'pg', group: :production
   gem 'rails_12factor', group: :production
+  gem 'rails_serve_static_assets', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
