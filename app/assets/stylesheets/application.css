@@ -14,3 +14,11 @@
  *= require_self
  *= require_tree .
  */
+
+
+ .header {
+  padding:40px;
+  padding-bottom:30px;
+  background-image: url("lightpaperfibers.png");
+}
+
