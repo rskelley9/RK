@@ -1,459 +1,65 @@
-
-<div class="platform">
-
-  <div class="header">
-
-    <div class="row">
-
-      <div class="span">
-       <%= gravatar_image_tag('rskelley9@gmail.com', :alt => 'Ryan Kelley', :gravatar => { :secure => true }, class: "img-polaroid" ) %>
-     </div>
-     <!--/photo-->
-
-     <div class="span margin-bottom-5">
-      <div class="name-text">Ryan Kelley</div>
-      <div class="major-text"><i>Full Stack Web Developer</i></div>
-    </div>
-    <!--/name-->
-
-    <div class="span pull-right">
-      <div class="span">
-        <address class="margin-bottom-5">
-          2200 12th Court N.<br>
-          #716<br>
-          Arlington, VA 22201
-        </address>
-        <abbr rel="tooltip" data-original-title="Phone">P:</abbr>&nbsp;&nbsp;+1-860-916-7174<br>
-        <abbr rel="tooltip" data-original-title="Email">E:</abbr>&nbsp;&nbsp;<a href="mailto:rskelley9@gmail.com">rskelley9@gmail.com</a><br>
-        <abbr rel="tooltip" data-original-title="Website">G:</abbr>&nbsp;&nbsp;<a href="http://github.com/rskelley9">github.com/rskelley9</a><br>
-        <div class="margin-top-5 margin-bottom-5">
-          <a href="http://lnkd.in/BBcATi" rel="tooltip" data-original-title="LinkedIn"><%= image_tag ("linkedin.png"), alt:"LinkedIn", width:"20" %></a>&nbsp;
-          <a href="http://twitter.com/ryan_s_kelley" rel="tooltip" data-original-title="Twitter"><%= image_tag ("twitter.png"), alt:"Twitter", width:"20" %></a>&nbsp;
-          <a href="https://www.facebook.com/rskelley9" rel="tooltip" data-original-title="Facebook"><%= image_tag ("facebook.png"), alt:"Facebook", width:"20" %></a>&nbsp;
-          <a href="https://plus.google.com/+RyanKelley" rel="tooltip" data-original-title="Google Plus"><%= image_tag ("googleplus.png"), alt:"Google Plus", width:"20" %></a>
-        </div>
-      </div>
-      <div class="span">
-        <%= image_tag ("qrcode.jpg"), alt:"QR Business Card", width:"75", rel:"tooltip", :"data-original-title" =>"Save my vCard" %>
-      </div>
-
-      <a class="pdf" href="Resume/Ryan_Sullivan_Kelley4.pdf" download="Ryan_Sullivan_Kelley.pdf" target="_blank" rel="tooltip" data-original-title="Download as PDF"><%= image_tag ("pdf_icon.png"), alt:"PDF", width:"`100" %></a>
-
-    </div>
-    <!--/contacts-->
-
-  </div>
-
-</div><!-- /header -->
-
+<%= render partial: "shared/resume_header" %>
+<!-- /header-->
 
 <div class="main">
-
-  <div class="row">
-    <div class="span section-title">
-      Objective
-    </div>
-    <div class="span section-body">
-      I am seeking a challenging web development position that will help grow my skill set. I am an enthusiastic programmer striving to find my potential, and I feel rewarded when I help teammates and colleagues reach for theirs. If you offer me the opportunity to contribute to your business, I promise to repay you with my dedication and best work.
-    </div>
-  </div>
+  <%= render partial: "shared/objective" %>
   <!-- /objective-->
 
   <!-- skills -->
 
   <div class="seperator"></div>
 
-  <div class="row">
-    <div class="span section-title">
-      Professional Skills
-    </div>
-
-    <div class="span section-body">
-
-      <div class="clearfix">
-
-        <div class="subject-name">Web Development</div>
-        <table>
-          <tr>
-            <td>
-              <ul>
-                <li>ActiveRecord</li>
-                <li>Agile Development</li>
-                <li>AngularJS, NodeJS</li>
-                <li>CSS, Compass, Sass</li>
-                <li>Git</li>
-                <li>HTML and Markdown</li>
-              </ul>
-            </td>
-            <td style="float:left;margin-left:10px;">
-              <li><b>Javascript, AJAX, jQuery</b></li>
-              <li>RSpec, BDD, TDD</li>
-              <li>Ruby Motion and iOS</li>
-              <li><b>Ruby on Rails</b></li>
-              <li><b>Sinatra</b></li>
-              <li>SQL</li>
-            </td>
-          </tr>
-        </table>
-
-        <div class="margin-bottom-10"></div>
-
-        <div class="subject-name">Other Technical</div>
-        <table>
-          <tr>
-            <td>
-              <ul>
-                <li>Content Management, Blogging</li>
-                <li>Database Design, Data Modeling</li>
-                <li>Economics, Statistics</li>
-                <li>News Writing</li>
-              </ul>
-            </td>
-            <td>
-              <ul style="padding-left:6px;">
-                <li>Internet Marketing</li>
-                <li>Software Project Management</li>
-                <li>Regression Analysis</li>
-                <li>Stata, Visual Basic</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-
-      </div>
-
-    </div>
-  </div>
-  <!-- /skills-->
+  <%= render partial: "shared/skills" %>
 
 
   <!-- /education-->
 
   <div class="seperator"></div>
 
-  <div class="row">
-    <div class="span section-title">
-      Education
-    </div>
-
-    <div class="span section-body">
-
-      <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name">Web Application Development</div>
-            <div class="item-desc">Dev Bootcamp, Chicago, IL</div>
-          </div>
-          <div class="item-period pull-right span">Graduated November 2013</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Rigorous web development immersion program; utilized a class lab setting modeled after workplace</li>
-            <li>70-100 hours per week, for 12 weeks, developed countless programs</li>
-            <li>Learned numerous productivity techniques including: pair  programming, code reviewing, test-driven development and managing workflow</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner-seperator"></div>
-
-      <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name">B.A. Economics</div>
-            <div class="item-desc">The George Washington University, Washington, D.C.</div>
-          </div>
-          <div class="item-period pull-right span">Graduated May 2012</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li><b>Thesis:</b> Earned award nomination and perfect score for senior thesis, "Pitcher Productivity and the Major League Baseball Labor Market." </li>
-            <li>Used OLS regression, multiple other statistical tests to support arguments</li>
-            <li>Granted special access to proprietary database belonging to award winning author Tom Tango</li>
-            <li>Graduated with 3.2 GPA in economics and political science</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!-- /education-->
+  <%= render partial: "shared/education" %>
 
   <div class="seperator"></div>
 
-  <div class="row">
-    <div class="span section-title">
-      Work Experience <span style="font-size:14px">(Web-Development Related)</span>
-    </div>
-
-    <div class="span section-body">
-
-      <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name">FreeSwim.co, Alexandria, Virginia</div>
-            <div class="item-desc">Ruby Developer</div>
-          </div>
-          <div class="item-period pull-right span">April 2014 - Present</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Member of three-person Ruby and iOS development team</li>
-            <li>Build both customized website modules and stand-alone web-based applications</li>
-            <li>Directed development and deployment of FreeSwim.co website </li>
-            <li>Broker deals with clients and affiliates as manager of business operations</li>
-            <li>Utilize cutting-edge technologies like Ruby on Rails, JQuery, AJAX, NodeJS, PHP, RubyMotion, iOS</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner-seperator"></div>
-
-      <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name">Greater Than > Web Development, Arlington, VA</div>
-            <div class="item-desc">Freelance Web Developer</div>
-          </div>
-          <div class="item-period pull-right span">February 2014 - Present</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Plan, develop, deploy and manage Rails and Sinatra applications for local businesses</li>
-            <li>Provide UI, UX web design and static site design services</li>
-            <li>Develop and/or integrate modules into production applications</li>
-            <li>Build booking and practice management software for medical offices and small businesses</li>
-            <li>Emphasize SEO and partner with clients to strengthen their internet marketing platforms</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner-seperator"></div>
-
-      <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name">Dev Bootcamp, Chicago, IL</div>
-            <div class="item-desc">Teaching Assistant</div>
-          </div>
-          <div class="item-period pull-right span">November 2013 - February 2014</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Taught students Ruby on Rails, Javascript, testing, Git and agile workflow design with Phase 3 instructors</li>
-            <li>Pair-programmed with students, gave them code reviews and actionable feedback on their final projects</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner-seperator"></div>
-
-      <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name">TKG, LLC, Wilmington, DE</div>
-            <div class="item-desc">Assistant Account Manager</div>
-          </div>
-          <div class="item-period pull-right span">September 2010 – October 2012</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Partnered with businesses to optimize online marketing campaigns</li>
-            <li>Employed skills in affiliate marketing, content development and promotional writing</li>
-            <li>Identified and tracked key performance metrics to increase customers' returns on investments</li>
-            <li>Developed, monitored and optimized pay-per-click campaigns with targeting and keyword optimization strategies</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= render partial: "shared/work_experience" %>
 
   <!-- work -->
 
   <div class="seperator"></div>
 
-  <div class="row">
-    <div class="span section-title">
-      Recent Projects
-    </div>
+ <%= render partial: "shared/recent_projects" %>
+<!-- recent projects -->
 
-    <div class="span section-body">
+<div class="seperator"></div>
 
-       <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name">Dental_Admin (Private Repository)</div>
-          </div>
-          <div class="item-period pull-right span">April 2014 - Present</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Application provides the foundation for medical practices to develop a web platform quickly</li>
-            <li>Created a CMS/admin system with Dragonfly for image management, Devise for security</li>
-            <li>Provides customizable patient management, registration and database admin system 'out of the box'</li>
-            <li>Drastically cuts development and admin costs for small dental practices</li>
-            <li>Wrote a full proposal and created a software project blueprint before development</li>
-            <div class="item-desc">Technologies Used: Rails 3.2, Git, Javascript (jQuery, AJAX), SCSS, SQL; ActiveAdmin, Active Record, Backstretch, Bootstraps, Chosen, Datepicker, Devise, Dragonfly, High_Voltage, Squeel, Time Libraries</div>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner-seperator"></div>
-
-       <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name"><%= link_to "SHP Photography","https://github.com/rskelley9/PhotoWebsite" %></div>
-          </div>
-          <div class="item-period pull-right span">April 2014 - June 2014</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Contracted developer of commercial photographer's portfolio and booking website</li>
-            <li>Created a CMS/admin system with Dragonfly for image management, Devise for security</li>
-            <li>Designed attractive interface with a focus on optimal user experience</li>
-            <li>Highly DRY, modular app with most of the custom elements housed in partials</li>
-            <li>Wrote a full proposal and created a software project blueprint before development</li>
-            <div class="item-desc">Technologies Used: Rails 3.2, CSS3 & Sass, Javascript (jQuery, AJAX), Git, Heroku; ActiveAdmin, Backstretch, Devise, Dragonfly, GrokPhoto, Image_Magick, Simple_Form</div>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner-seperator"></div>
-
-       <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name"><%= link_to "FreeSwim.co","https://www.freeswim.co/"%></div>
-          </div>
-          <div class="item-period pull-right span">April 2014 - June 2014</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Developed a custom blog content management system for FreeSwim.co</li>
-            <li>Helped develop user and admin interfaces, convert static site to dynamic application</li>
-            <li>Deployed and configured application for production environment and added SSL security</li>
-            <li>Responsible for procuring marketing affiliates and developing engaging blog content</li>
-            <div class="item-desc">Technologies Used: Rails 3.2, CSS3, Git, Javascript (jQuery, AJAX), Heroku; CarrierWave, CK_Editor, Devise, Monologue Blog Engine, OAuth, SSL</div>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner-seperator"></div>
-
-      <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name"><%= link_to "Pupular","https://github.com/eisenachalex/pupular/tree/image_uploads"%></div>
-          </div>
-          <div class="item-period pull-right span">April 2014 - June 2014</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Added image-upload and processing features to social networking application</li>
-            <li>Helping develop user system and intuitive interface for profile management</li>
-            <li>Implementing behavior-driven development with latest version of application</li>
-            <div class="item-desc">Technologies Used: Rails 3.2, Git, Javascript (jQuery, AJAX), XML Schema Designer; ActiveAdmin, Active Record, Amazon S3, Cucumber, Devise, Dragonfly, ImageMagick, Paperclip, Rack::Cache</div>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner-seperator"></div>
-
-      <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name"><%= link_to "AltaWP","https://bitbucket.org/rkelley/alta-july"%></div>
-          </div>
-          <div class="item-period pull-right span">February 2014 - June 2014</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Contracted as lead developer of Alta's Rails web application</li>
-            <li>Designed and presented <a href="https://github.com/conman246/waterproofing">demo site</a> to client, and subsequently secured the contract</li>
-            <li>Integrated content management system to help site admins easily develop engaging content</li>
-            <div class="item-desc">Technologies Used: Rails 4.0, CSS3, Git, Javascript (jQuery and AJAX), Trello; Bootstraps, CDN Scripts, Comfortable Mexican Sofa, Google Maps API, High_Voltage</div>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner-seperator"></div>
-
-      <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name"><%= link_to "Karma Grove","https://github.com/joshuamantras/karmagrove"%></div>
-          </div>
-          <div class="item-period pull-right span">November 2013 - January 2014</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Second lead developer and major contributor of charitable marketplace proof-of-concept application</li>
-            <li>Wrote software directing sales profit to environmental charities selected by consumer and producer</li>
-            <li>Designed user interface and authored About page content</li>
-            <div class="item-desc">Technologies Used: Ruby on Rails, Javascript (jQuery, AJAX), Active Admin, Bootstraps, Devise, Factory Girl,  Git, Heroku, OAuth, Pivotal Tracker, RSpec, Stripe</div>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner-seperator"></div>
-
-
-      <div class="clearfix">
-        <div class="row">
-          <div class="span">
-            <div class="item-name"><%= link_to "SmartGroups", "https://github.com/zrivest/smart_groups" %></div>
-          </div>
-          <div class="item-period pull-right span">November 2013</div>
-        </div>
-        <div class="margin-top-10">
-          <ul>
-            <li>Teacher toolkit application: uploads CSV grade books and offers array of useful functions</li>
-            <li>Interactive graphs (High Charts) for tracking student performance over time, vs. peers, vs. class</li>
-            <li>Intelligent group generator with algorithms for GPA dispersion, participation rate dispersion</li>
-            <li>Designed workflow to deal with strict, high-pressure deadline</li>
-            <li>Formal presentation to audience of representatives from Chicago-area tech companies</li>
-            <div class="item-desc">Technologies Used: Ruby on Rails, AJAX, CSV, Git, jQuery, OpenURI, Rspec, Trello; Bcrypt, Bootstraps, HighCharts Trello, Git, Heroku</div>
-          </ul>
-        </div>
-      </div>
-
-    </div>
+<div class="row">
+  <div class="span section-title">
+    Other Projects
   </div>
+  <div class="span section-body">
+    <ul style="list-style:none;margin-left:-10px;">
+     <li style="padding-bottom:4px;"><b style="color:#2e4dbf;"><%= link_to "DBC Quora", "https://github.com/DriftingWave/DBC-Core-a"%>:</b> Application designed on Quora question/answer framework, built as DBC project</li>
+     <li style="padding-bottom:4px;"><b style="color:#2e4dbf;"><%= link_to "VeloSURaptor", "https://github.com/rskelley9/VelaSURaptor" %>:</b> Web survey development application built with Sinatra</li>
+     <li style="padding-bottom:4px;"><b style="color:#2e4dbf;"><a href="https://github.com/rskelley9/NewPostit">EasyStickies:</a></b> Lite jQuery plugin that adds dynamic Post-it note functionality to any web page</li>
+     <li><b style="color:#2e4dbf;">SudokuSolver:</b> Command line interface program capable of solving the most difficult sudoku boards</li>
+   </ul>
+ </div>
+</div>
+<!-- /other projects-->
 
-  <!-- recent projects -->
+<div class="seperator"></div>
 
-  <div class="seperator"></div>
-
-  <div class="row">
-    <div class="span section-title">
-      Other Projects
-    </div>
-    <div class="span section-body">
-      <ul style="list-style:none;margin-left:-10px;">
-         <li style="padding-bottom:4px;"><b style="color:#2e4dbf;"><%= link_to "DBC Quora", "https://github.com/DriftingWave/DBC-Core-a"%>:</b> Application designed on Quora question/answer framework, built as DBC project</li>
-        <li style="padding-bottom:4px;"><b style="color:#2e4dbf;"><%= link_to "VeloSURaptor", "https://github.com/rskelley9/VelaSURaptor" %>:</b> Web survey development application built with Sinatra</li>
-        <li style="padding-bottom:4px;"><b style="color:#2e4dbf;"><a href="https://github.com/rskelley9/NewPostit">EasyStickies:</a></b> Lite jQuery plugin that adds dynamic Post-it note functionality to any web page</li>
-        <li><b style="color:#2e4dbf;">SudokuSolver:</b> Command line interface program capable of solving the most difficult sudoku boards</li>
-      </ul>
-    </div>
-  </div>
-  <!-- /other projects-->
-
-  <div class="seperator"></div>
-
-  <div class="clearfix pull-left">
-    <a class="dotted pdf-download" href="Resume/Ryan_Sullivan_Kelley4.pdf" download="Ryan_Sullivan_Kelley4.pdf">
-      <b>pdf</b>
-    </a>
-  </div>
-
-  <div class="clearfix margin-bottom-10 pull-right">
-    <a class="dotted" href="javascript:;"
-    onclick="jQuery('html,body').animate({scrollTop: jQuery('.header').offset().top}, 'slow');"
-    >
-    <b>top</b>
+<div class="clearfix pull-left">
+  <a class="dotted pdf-download" href="Resume/Ryan_Sullivan_Kelley4.pdf" download="Ryan_Sullivan_Kelley4.pdf">
+    <b>pdf</b>
   </a>
+</div>
+
+<div class="clearfix margin-bottom-10 pull-right">
+  <a class="dotted" href="javascript:;"
+  onclick="jQuery('html,body').animate({scrollTop: jQuery('.header').offset().top}, 'slow');"
+  >
+  <b>top</b>
+</a>
 </div>
 
 </div> <!-- /main -->
