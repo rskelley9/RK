@@ -4,10 +4,6 @@ class PagesController < ApplicationController
 
   layout :layout_for_page
 
-  def resume
-    render layout: "resume_layout"
-  end
-
   private
 
   def layout_for_page
