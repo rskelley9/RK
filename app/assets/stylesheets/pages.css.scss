@@ -1,3 +1,31 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.skills-column#column2{
+  float:left !important;
+  margin-left:10px !important;
+  width: 100%;
+}
+
+.item-period.pull-right.span{
+  margin-right:20px;
+}
+
+.pdf{
+  margin-left: 28%;
+}
+
+
+div.item-name {
+font-size: 18px;
+}
+
+div.item-period {
+font-size: 14px;
+}
+
+.header .row:first-child{
+  width: 100%;
+}
