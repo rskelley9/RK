@@ -14,7 +14,10 @@
 }
 
 .pdf{
-  margin-left: 28%;
+ // margin-left: 28%;
+ position: fixed;
+ top: 0%;
+ right: 0%;
 }
 
 
@@ -29,3 +32,5 @@ font-size: 14px;
 .header .row:first-child{
   width: 100%;
 }
+
+
